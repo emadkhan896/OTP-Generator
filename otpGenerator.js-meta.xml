@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+         <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets = "lightning__AppPage">
+            <property name = "otpLength"
+            type = "Integer"
+            label = "Enter the OTP"
+            description = "otp length should be 3 to 6"
+            default = "6">
+            </property>
+
+            <property name = "timeDuration"
+            type = "Integer"
+            label = "Enter the time duration"
+            description = "Enter the time duration in seconds"
+            min = "10"
+            max = "30"
+            default = "6">
+            </property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
